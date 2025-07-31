@@ -1,0 +1,79 @@
+.solution-and-service {
+  .title {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      content: ' ';
+    }
+  }
+
+  .timeline-block {
+    padding-bottom: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* &:not(:last-child) {
+      border-bottom: 3px solid white;
+    } */
+
+    position: relative;
+
+    .connector-wrapper {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      height: 116px;
+      left: 0;
+      top: 100%;
+      transform: translateY(-25px);
+
+      &::after {
+        content: ' ';
+        width: 100000px;
+        height: 2px;
+        left: 0;
+        bottom: 6px;
+        background-color: white;
+        position: absolute;
+        margin-left: -400px;
+      }
+
+      .connector {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        background-color: white;
+        transform: translateX(-50%);
+        display: inline-block;
+
+        &::before,
+        &::after {
+          display: inline-block;
+          content: ' ';
+          border-radius: 100%;
+          position: absolute;
+          transform: translateX(-50%);
+          background-color: white;
+        }
+
+        &::before {
+          bottom: 100%;
+          width: 24px;
+          height: 24px;
+        }
+
+        &::after {
+          top: 100%;
+          width: 16px;
+          height: 16px;
+          /* bottom: 0; */
+        }
+      }
+    }
+  }
+}

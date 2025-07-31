@@ -1,0 +1,58 @@
+export const mockDuAnTieuBieu = [
+  {
+    id: 'item-1',
+    imageUrl: '/assets/fint/dua-dvc.png',
+    title: 'Nâng cấp, hoàn thiện hệ thống thông tin giải quyết thủ tục hành chính',
+    year: '2023',
+    department: 'Bộ Kế hoạch và Đầu tư',
+  },
+  {
+    id: 'item-2',
+    imageUrl: '/assets/fint/vasi.png',
+    title: 'Phát triển ứng dụng công nghệ số trong quản lý đô thị thông minh',
+    year: '2024',
+    department: 'Bộ Xây dựng',
+  },
+  {
+    id: 'item-3',
+    imageUrl: '/assets/fint/waf.png',
+    title: 'Chuyển đổi số trong lĩnh vực giáo dục và đào tạo',
+    year: '2023',
+    department: 'Bộ Giáo dục và Đào tạo',
+  },
+  {
+    id: 'item-4',
+    imageUrl: '/assets/fint/dua-dvc.png',
+    title: 'Triển khai hệ thống y tế số quốc gia',
+    year: '2024',
+    department: 'Bộ Y tế',
+  },
+  {
+    id: 'item-5',
+    imageUrl: '/assets/fint/vasi.png',
+    title: 'Tối ưu hóa quy trình thủ tục hải quan điện tử',
+    year: '2023',
+    department: 'Tổng cục Hải quan',
+  },
+  // {
+  //   id: 'item-6',
+  //   imageUrl: 'https://placehold.co/700x500/000000/FFFFFF?text=Image+6',
+  //   title: 'Xây dựng nền tảng dữ liệu lớn cho nông nghiệp thông minh',
+  //   year: '2024',
+  //   department: 'Bộ Nông nghiệp và Phát triển Nông thôn',
+  // },
+  {
+    id: 'item-7',
+    imageUrl: '/assets/fint/waf.png',
+    title: 'Đẩy mạnh dịch vụ công trực tuyến cấp độ 4',
+    year: '2023',
+    department: 'Văn phòng Chính phủ',
+  },
+  {
+    id: 'item-8',
+    imageUrl: '/assets/fint/dua-dvc.png',
+    title: 'An toàn thông tin mạng và bảo mật dữ liệu',
+    year: '2024',
+    department: 'Bộ Công an',
+  },
+];

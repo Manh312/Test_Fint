@@ -1,0 +1,32 @@
+.bento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 24px 189px 24px 181px 24px 230px;
+  grid-template-areas:
+    '. meeting'
+    'thu meeting'
+    'thu .'
+    'thu teambuilding'
+    '. teambuilding'
+    'stats teambuilding';
+  grid-gap: 0 24px;
+
+  .Thu {
+    grid-area: thu;
+    background: greenyellow;
+  }
+
+  .Meeting {
+    grid-area: meeting;
+    background: cadetblue;
+  }
+
+  .Teambuilding {
+    grid-area: teambuilding;
+    background: chocolate;
+  }
+
+  .Stats {
+    grid-area: stats;
+  }
+}
