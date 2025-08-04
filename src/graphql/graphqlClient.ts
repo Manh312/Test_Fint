@@ -4,11 +4,11 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 const tokenEndpoint = `${API_BASE_URL}/connect/token`;
 const graphqlEndpoint = `${API_BASE_URL}/api/graphql`;
 
-interface TokenResponse {
+type TokenResponse = {
   access_token: string;
   expires_in: number;
   token_type: string;
-}
+};
 
 let graphQLClient: GraphQLClient;
 
@@ -19,12 +19,12 @@ const getTokenClient = async (): Promise<string> => {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: new URLSearchParams({
-        grant_type: process.env.NEXT_PUBLIC_AUTH_GRANT_TYPE || 'password',
-        username: process.env.NEXT_PUBLIC_AUTH_USERNAME!,
-        password: process.env.NEXT_PUBLIC_AUTH_PASSWORD!,
-        client_id: process.env.NEXT_PUBLIC_AUTH_CLIENT_ID!,
-        client_secret: process.env.NEXT_PUBLIC_AUTH_CLIENT_SECRET!,
-        scopes: process.env.NEXT_PUBLIC_AUTH_SCOPE || 'profile',
+      grant_type: process.env.NEXT_PUBLIC_AUTH_GRANT_TYPE || 'password',
+      username: process.env.NEXT_PUBLIC_AUTH_USERNAME!,
+      password: process.env.NEXT_PUBLIC_AUTH_PASSWORD!,
+      client_id: process.env.NEXT_PUBLIC_AUTH_CLIENT_ID!,
+      client_secret: process.env.NEXT_PUBLIC_AUTH_CLIENT_SECRET!,
+      scopes: process.env.NEXT_PUBLIC_AUTH_SCOPE || 'profile',
     }),
   });
 
