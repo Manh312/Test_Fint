@@ -1,8 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { FaBriefcase, FaClock, FaEnvelope, FaMapMarkerAlt, FaMoneyBillWave } from 'react-icons/fa';
 import { IoMdCheckmarkCircle } from 'react-icons/io';
+
+import { Button } from '@/components/ui/button';
 
 import { fetchJobs } from '../../../../../services/JobServices';
 import type { Job } from '../../../../../types/job';
@@ -64,6 +67,11 @@ const CareerPage = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50 min-h-screen">
+      <Link href="/career-opportunities/policies-and-culture">
+        <Button variant="default" size="sm" className="mb-6">
+          Quay lại chính sách và văn hóa
+        </Button>
+      </Link>
       <h1 className="text-5xl font-bold text-center mb-12 text-gray-900 drop-shadow-md">
         Danh sách công việc hiện có
       </h1>

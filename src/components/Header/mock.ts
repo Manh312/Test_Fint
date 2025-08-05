@@ -50,6 +50,6 @@ export const menuItems: MenuItem[] = [
   {
     id: 'careers',
     title: 'Cơ hội nghề nghiệp',
-    href: '/career-opportunities/career',
+    href: '/career-opportunities/policies-and-culture',
   },
 ];
